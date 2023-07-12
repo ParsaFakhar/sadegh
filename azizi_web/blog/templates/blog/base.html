@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+{% load i18n %}
+{% load static %}
+{% get_current_language as LANGUAGE_CODE %}
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <noscript>Dude, Turn Your JavaScript On, How Else I'm Supposed To Steal Your Data And Sell it To FBI!</noscript>
+    <link rel="stylesheet" href="{% static 'blog/css/mcleod-reset.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/css/main.css' %}">
+<!--    <link rel="stylesheet" href="{ static 'blog/css/bootstrap.min.css' %}">-->
+    {% block rel %}
+    {% endblock %}
+
+{#    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.5.0/css/bootstrap4-toggle.min.css" rel="stylesheet">#}
+{#    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.5.0/js/bootstrap4-toggle.min.js"></script>#}
+<!--    <script type="text/javascript" src="{ static 'blog/js/jquery-3.3.1.min.js' %}"></script>-->
+<!--    <script type="text/javascript" src="{ static 'blog/js/bootstrap.min.js' %}"></script>-->
+    <link rel="stylesheet" href="{% static 'blog/css/bootstrap4-toggle.min.css' %}">
+
+    <title>Title</title>
+
+</head>
+<body>
+
+<!-- .site-mobile-menu -->
+<div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+
+    <!-- NAVBAR -->
+<header class="site-navbar">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="site-logo col-6"><a href="index.html">Brand</a></div>
+
+          <nav class="mx-auto site-navigation">
+            <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
+              <li><a href="index.html" class="nav-link active">{% trans "Home" %}</a></li>
+              <li><a href="">{% trans "About" %}</a></li>
+              <li class="has-children">
+                <a href="">{% trans "Job Listings" %}</a>
+                <ul class="dropdown">
+                  <li><a href="">{% trans "Job Single" %}</a></li>
+                  <li><a href="">{% trans "Profile" %}</a></li>
+                </ul>
+              </li>
+              <li class="has-children">
+                <a href="">{% trans "Pages" %}</a>
+                <ul class="dropdown">
+                  <li><a href="">{% trans "Services" %}</a></li>
+                  <li><a href="">{% trans "Service Single" %}</a></li>
+                  <li><a href="">{% trans "Blog Single" %}</a></li>
+                  <li><a href="">{% trans "Portfolio" %}</a></li>
+                  <li><a href="">{% trans "Portfolio Single" %}</a></li>
+                  <li><a href="">{% trans "Testimonials" %}</a></li>
+                  <li><a href="">{% trans "Frequently Ask Questions" %}</a></li>
+                  <li><a href="">{% trans "Gallery" %}</a></li>
+                </ul>
+              </li>
+              <li><a href="">{% trans "Blog" %}</a></li>
+              <li><a href="">{% trans "Contact" %}</a></li>
+              <li class="d-lg-none"><a href=""><span class="mr-2">+</span>{% trans "Profile" %}</a></li>
+              <li class="d-lg-none"><a href="">{% trans "Log In" %}</a></li>
+            </ul>
+          </nav>
+
+          <div class="right-cta-menu text-right d-flex aligin-items-center col-6">
+            <div class="ml-auto">
+              <a href="" class="btn btn-outline-white border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-add"></span>{% trans "Profile" %}</a>
+              <a href="" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>{% trans "Log In" %}</a>
+
+                <input type="checkbox" {% if LANGUAGE_CODE == 'en' %} checked {% endif %} data-toggle="toggle" data-width="70" data-height="40"
+               data-on="<img style='height:45px; box-sizing: content-box; margin: -0.6rem 0rem 0 -1rem;' src='{% static 'blog/images/Flags/united-states.png' %}'>"
+               data-off="<img style='height:45px; box-sizing: content-box; margin: -0.6rem 0rem 0 -1rem;' src='{% static 'blog/images/Flags/iran.png' %}'>"
+               data-onstyle="danger" data-offstyle="success" data-style="ios">
+
+            </div>
+            <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3"><span class="icon-menu h3 m-0 p-0 mt-2"></span></a>
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+
+
+{% block content %}
+{% endblock %}
+
+<!-- Footer -->
+<footer class="mainfooter mt-5">
+    <div class="footer-header d-flex flex-column flex-sm-row justify-content-center justify-content-sm-between align-items-center">
+
+        <h6 class="m-0 ml-2">{% trans "Get connected with us on social networks!" %}</h6>
+
+        <div class="mr-2">
+            <a href=""><i class="demo-icon icon-facebook"></i></a>
+            <a href=""><i class="demo-icon icon-twitter"></i></a>
+            <a href=""><i class="demo-icon icon-google-plus"></i></a>
+            <a href=""><i class="demo-icon icon-linkedin"></i></a>
+            <a href=""><i class="demo-icon icon-instagram"></i></a>
+            <a href=""><i class="demo-icon icon-telegram"></i></a>
+        </div>
+
+    </div>
+
+    <div class="footer-links container text-center text-md-left mt-5">
+
+        <div class="row mt-3">
+
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                <h6 class="text-uppercase font-weight-bold text-nowrap">{% trans "Mehr Velayat English Institution" %}</h6>
+                <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>{% trans "Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,consectetur adipisicing elit." %}</p>
+
+            </div>
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                <h6 class="text-uppercase font-weight-bold">{% trans "Products" %}</h6>
+                <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+
+                <p><a href="#">{% trans "MDBootstrap" %}</a></p>
+                <p><a href="#">{% trans "MDWordPress" %}</a></p>
+                <p><a href="#">{% trans "BrandFlow" %}</a></p>
+                <p><a href="#">{% trans "Bootstrap Angular" %}</a></p>
+
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                <h6 class="text-uppercase font-weight-bold">{% trans "Useful links" %}</h6>
+                <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+
+                <p><a href="#">{% trans "Your Account" %}</a></p>
+                <p><a href="#">{% trans "Become an Affiliate" %}</a></p>
+                <p><a href="#">{% trans "Shipping Rates" %}</a></p>
+                <p><a href="#">{% trans "Help" %}</a></p>
+
+            </div>
+
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                <h6 class="text-uppercase font-weight-bold">{% trans "Contact" %}</h6>
+                <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+
+                <address><i class="demo-icon icon-home pr-4"></i>
+<pre style="color: #FFFEFF">
+    {% blocktrans %}
+        No1-20St.Industrial Town South
+        Of Tehran (Chahardangeh) Saveh,Road.
+        Tehran, Iran
+    {% endblocktrans %}
+</pre>
+                </address>
+                <p><i class="demo-icon icon-mail_outline pr-4"></i>{% trans "SadeghAzizi@gmail.com" %}</p>
+                <p><i class="demo-icon icon-phone pr-4"></i>{% trans " + 021 55257779" %}</p>
+                <p><i class="demo-icon icon-print pr-4"></i>{% trans " + 021 55250237" %}</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-copyright d-flex justify-content-center align-items-center">
+        {% trans "&copy; 2018 Copyright:&nbsp;" %}
+        <a href="#">{% trans "MehrVelayat.com" %}</a>
+    </div>
+</footer>
+
+
+
+{% block js %}
+{% endblock %}
+    <script type="text/javascript" src="{% static 'blog/js/bootstrap4-toggle.js' %}"></script>
+{% csrf_token %}
+    <script type="text/javascript">
+    $(document).ready(function() {
+        var csrftoken = $("[name=csrfmiddlewaretoken]").val();
+        function csrfSafeMethod(method) {
+            // these HTTP methods do not require CSRF protection
+            return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+        }
+        $.ajaxSetup({
+            beforeSend: function(xhr, settings) {
+                if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                    xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                }
+            }
+        });
+
+        $(".toggle-on").click(function () {
+                           change_flag("fa");
+            });
+        $(".toggle-off").click(function () {
+                            change_flag("en");
+            });
+
+
+        function change_flag(lang){
+            $.ajax({
+                method: "POST",
+                url: "{% url 'set_language' %}",
+                data: {'language': lang, 'next': '{{ request.path }}'},
+            }).done(function(data, textStatus, jqXHR) {
+                {#alert("{{request.path}}".replace(/en-us|fa-ir/g,lang));#}
+                top.location.href="{{request.path}}".replace(/en|fa/g, lang);
+            });
+        }
+    });
+    </script>
+</body>
+</html>
