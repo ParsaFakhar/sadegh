@@ -1,0 +1,5 @@
+.footer-header div{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+}

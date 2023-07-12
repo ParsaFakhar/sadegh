@@ -1,0 +1,289 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-12 19:04+0330\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: templates/blog/base.html:47
+msgid "Home"
+msgstr ""
+
+#: templates/blog/base.html:48
+msgid "About"
+msgstr ""
+
+#: templates/blog/base.html:50
+msgid "Job Listings"
+msgstr ""
+
+#: templates/blog/base.html:52
+msgid "Job Single"
+msgstr ""
+
+#: templates/blog/base.html:53 templates/blog/base.html:71
+#: templates/blog/base.html:78
+msgid "Profile"
+msgstr ""
+
+#: templates/blog/base.html:57
+msgid "Pages"
+msgstr ""
+
+#: templates/blog/base.html:59
+msgid "Services"
+msgstr ""
+
+#: templates/blog/base.html:60
+msgid "Service Single"
+msgstr ""
+
+#: templates/blog/base.html:61
+msgid "Blog Single"
+msgstr ""
+
+#: templates/blog/base.html:62
+msgid "Portfolio"
+msgstr ""
+
+#: templates/blog/base.html:63
+msgid "Portfolio Single"
+msgstr ""
+
+#: templates/blog/base.html:64
+msgid "Testimonials"
+msgstr ""
+
+#: templates/blog/base.html:65
+msgid "Frequently Ask Questions"
+msgstr ""
+
+#: templates/blog/base.html:66
+msgid "Gallery"
+msgstr ""
+
+#: templates/blog/base.html:69
+msgid "Blog"
+msgstr ""
+
+#: templates/blog/base.html:70 templates/blog/base.html:153
+msgid "Contact"
+msgstr ""
+
+#: templates/blog/base.html:72 templates/blog/base.html:79
+msgid "Log In"
+msgstr ""
+
+#: templates/blog/base.html:103
+msgid "Get connected with us on social networks!"
+msgstr ""
+
+#: templates/blog/base.html:122
+msgid "Mehr Velayat English Institution"
+msgstr ""
+
+#: templates/blog/base.html:124
+msgid ""
+"Here you can use rows and columns to organize your footer content. Lorem "
+"ipsum dolor sit amet,consectetur adipisicing elit."
+msgstr ""
+
+#: templates/blog/base.html:130
+msgid "Products"
+msgstr ""
+
+#: templates/blog/base.html:133
+msgid "MDBootstrap"
+msgstr ""
+
+#: templates/blog/base.html:134
+msgid "MDWordPress"
+msgstr ""
+
+#: templates/blog/base.html:135
+msgid "BrandFlow"
+msgstr ""
+
+#: templates/blog/base.html:136
+msgid "Bootstrap Angular"
+msgstr ""
+
+#: templates/blog/base.html:141
+msgid "Useful links"
+msgstr ""
+
+#: templates/blog/base.html:144
+msgid "Your Account"
+msgstr ""
+
+#: templates/blog/base.html:145
+msgid "Become an Affiliate"
+msgstr ""
+
+#: templates/blog/base.html:146
+msgid "Shipping Rates"
+msgstr ""
+
+#: templates/blog/base.html:147
+msgid "Help"
+msgstr ""
+
+#: templates/blog/base.html:158
+msgid ""
+"\n"
+"        No1-20St.Industrial Town South\n"
+"        Of Tehran (Chahardangeh) Saveh,Road.\n"
+"        Tehran, Iran\n"
+"    "
+msgstr ""
+
+#: templates/blog/base.html:165
+msgid "SadeghAzizi@gmail.com"
+msgstr ""
+
+#: templates/blog/base.html:166
+msgid " + 021 55257779"
+msgstr ""
+
+#: templates/blog/base.html:167
+msgid " + 021 55250237"
+msgstr ""
+
+#: templates/blog/base.html:174
+msgid "&copy; 2018 Copyright:&nbsp;"
+msgstr ""
+
+#: templates/blog/base.html:175
+msgid "MehrVelayat.com"
+msgstr ""
+
+#: templates/blog/index.html:43
+msgid "Yuki"
+msgstr ""
+
+#: templates/blog/index.html:43
+msgid "from Final Fantasy"
+msgstr ""
+
+#: templates/blog/index.html:44
+msgid "the Main Protagonist in the Anime"
+msgstr ""
+
+#: templates/blog/index.html:51
+msgid "Rin Tosaka"
+msgstr ""
+
+#: templates/blog/index.html:51
+msgid "from Fate Series"
+msgstr ""
+
+#: templates/blog/index.html:52
+msgid "the Main Heroine in Unlimited Blade Works"
+msgstr ""
+
+#: templates/blog/index.html:59
+msgid "Lelouch Lamperouge"
+msgstr ""
+
+#: templates/blog/index.html:59
+msgid "from Code Geass"
+msgstr ""
+
+#: templates/blog/index.html:60
+msgid "the Main Antagonist in the Anime"
+msgstr ""
+
+#: templates/blog/index.html:67
+msgid "Hanabe"
+msgstr ""
+
+#: templates/blog/index.html:67
+msgid "from Monotagari"
+msgstr ""
+
+#: templates/blog/index.html:68
+msgid "Secondary Character with ability to Turn into Cat"
+msgstr ""
+
+#: templates/blog/index.html:94
+msgid "About Us"
+msgstr ""
+
+#: templates/blog/index.html:97
+msgid ""
+"Teaching God’s Word Around the World by Teaching the English Language World "
+"English Institute has one mission with one purpose."
+msgstr ""
+
+#: templates/blog/index.html:100
+msgid ""
+"WEI works to lead as many people as possible from every nation under heaven "
+"to Christ by using God’s Word as the text to teach English grammar."
+msgstr ""
+
+#: templates/blog/index.html:103
+msgid ""
+"The English language is universal.  Billions want to learn it.  WEI teaches "
+"English free of charge in order to help them communicate effectively and "
+"read the Bible in English, many for the first time."
+msgstr ""
+
+#: templates/blog/index.html:106
+msgid "more info..."
+msgstr ""
+
+#: templates/blog/index.html:116 templates/blog/index.html:129
+#: templates/blog/index.html:141 templates/blog/index.html:153
+#: templates/blog/index.html:165 templates/blog/index.html:177
+#: templates/blog/index.html:189 templates/blog/index.html:201
+msgid "Header"
+msgstr ""
+
+#: templates/blog/index.html:118 templates/blog/index.html:131
+#: templates/blog/index.html:143 templates/blog/index.html:155
+#: templates/blog/index.html:167 templates/blog/index.html:179
+#: templates/blog/index.html:191 templates/blog/index.html:203
+msgid "Light card title"
+msgstr ""
+
+#: templates/blog/index.html:120 templates/blog/index.html:132
+#: templates/blog/index.html:144 templates/blog/index.html:156
+#: templates/blog/index.html:168 templates/blog/index.html:180
+#: templates/blog/index.html:192 templates/blog/index.html:204
+msgid ""
+"Some quick example text to build on the card title and make up the bulk of "
+"the card's content."
+msgstr ""
+
+#: templates/blog/index.html:124 templates/blog/index.html:148
+#: templates/blog/index.html:160 templates/blog/index.html:172
+#: templates/blog/index.html:184 templates/blog/index.html:196
+#: templates/blog/index.html:208
+msgid "more info"
+msgstr ""
+
+#: templates/blog/index.html:133 templates/blog/index.html:145
+#: templates/blog/index.html:157 templates/blog/index.html:169
+#: templates/blog/index.html:181 templates/blog/index.html:193
+#: templates/blog/index.html:205
+msgid ""
+"then quick example text to build on the card title and make up the bulk of "
+"the card's content."
+msgstr ""
+
+#: templates/blog/index.html:218
+msgid "Top"
+msgstr ""
