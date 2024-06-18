@@ -6,7 +6,7 @@
 
     <link rel="stylesheet" href="../../static/blog/fonts/icomoon/style.css">
 
-{#    <link rel="stylesheet" href="../../static/blog/css/owl.carousel.min.css">#}
+    {#    <link rel="stylesheet" href="../../static/blog/css/owl.carousel.min.css">#}
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../../static/blog/css/bootstrap.min.css">
@@ -25,197 +25,120 @@
 
 
 
-<!-- carousels -->
-<div class="carousel slide" id="featured" data-ride="carousel">
+    <!-- carousels -->
+    <div class="carousel slide" id="featured" data-ride="carousel">
 
-    <ol class="carousel-indicators">
-        <li data-target="#featured" data-slide-to="0" class="active"></li>
-        <li data-target="#featured" data-slide-to="1"></li>
-        <li data-target="#featured" data-slide-to="2"></li>
-        <li data-target="#featured" data-slide-to="3"></li>
-    </ol>
+        <ol class="carousel-indicators">
+            <li data-target="#featured" data-slide-to="0" class="active"></li>
+            <li data-target="#featured" data-slide-to="1"></li>
+            <li data-target="#featured" data-slide-to="2"></li>
+            <li data-target="#featured" data-slide-to="3"></li>
+        </ol>
 
-    <div class="carousel-inner">
+        <div class="carousel-inner">
 
-        <div class="carousel-item active">
-            <img class="d-block img-fluid" src="{% static 'blog/carousels/wallpaper_1.jpg' %}" alt="">
-            <div class="carousel-caption d-none d-sm-block">
-                <h3>{% trans "Yuki" %}</h3> <small>{% trans "from Final Fantasy" %}</small>
-                <p>{% trans "the Main Protagonist in the Anime" %}</p>
+            <div class="carousel-item active">
+                <img class="d-block img-fluid" src="{% static 'blog/carousels/wallpaper_1.png' %}" alt="">
+                <div class="carousel-caption d-none d-sm-block">
+                    <h3>{% trans "Yuki" %}</h3> <small>{% trans "from Final Fantasy" %}</small>
+                    <p>{% trans "the Main Protagonist in the Anime" %}</p>
+                </div>
             </div>
-        </div>
 
-        <div class="carousel-item">
-            <img class="d-block img-fluid" src="{% static 'blog/carousels/wallpaper_2.png' %}" alt="">
-            <div class="carousel-caption d-none d-sm-block">
-                <h3>{% trans "Rin Tosaka" %}</h3> <small>{% trans "from Fate Series" %}</small>
-                <p>{% trans "the Main Heroine in Unlimited Blade Works" %}</p>
+            <div class="carousel-item">
+                <img class="d-block img-fluid" src="{% static 'blog/carousels/wallpaper_2.png' %}" alt="">
+                <div class="carousel-caption d-none d-sm-block">
+                    <h3>{% trans "Rin Tosaka" %}</h3> <small>{% trans "from Fate Series" %}</small>
+                    <p>{% trans "the Main Heroine in Unlimited Blade Works" %}</p>
+                </div>
             </div>
-        </div>
 
-        <div class="carousel-item">
-            <img class="d-block img-fluid" src="{% static 'blog/carousels/wallpaper_3.jpg' %}" alt="">
-            <div class="carousel-caption d-none d-sm-block">
-                <h3>{% trans "Lelouch Lamperouge" %}</h3> <small>{% trans "from Code Geass" %}</small>
-                <p>{% trans "the Main Antagonist in the Anime" %}</p>
+            <div class="carousel-item">
+                <img class="d-block img-fluid" src="{% static 'blog/carousels/wallpaper_3.png' %}" alt="">
+                <div class="carousel-caption d-none d-sm-block">
+                    <h3>{% trans "Lelouch Lamperouge" %}</h3> <small>{% trans "from Code Geass" %}</small>
+                    <p>{% trans "the Main Antagonist in the Anime" %}</p>
+                </div>
             </div>
-        </div>
 
-        <div class="carousel-item">
-            <img class="d-block img-fluid" src="{% static 'blog/carousels/wallpaper_4.png' %}" alt="">
-            <div class="carousel-caption d-none d-sm-block">
-                <h3>{% trans "Hanabe" %}</h3> <small>{% trans "from Monotagari" %}</small>
-                <p>{% trans "Secondary Character with ability to Turn into Cat" %}</p>
+            <div class="carousel-item">
+                <img class="d-block img-fluid" src="{% static 'blog/carousels/wallpaper_4.png' %}" alt="">
+                <div class="carousel-caption d-none d-sm-block">
+                    <h3>{% trans "Hanabe" %}</h3> <small>{% trans "from Monotagari" %}</small>
+                    <p>{% trans "Secondary Character with ability to Turn into Cat" %}</p>
+                </div>
             </div>
-        </div>
 
-    </div> <!-- carousels-inner -->
+        </div> <!-- carousels-inner -->
 
-    <a class="carousel-control-prev" href="#featured" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#featured" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true">
             <span class="sr-only">Previous</span>
         </span>
-    </a>
+        </a>
 
-    <a class="carousel-control-next" href="#featured" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#featured" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true">
             <span class="sr-only">Next</span>
         </span>
-    </a>
-
-</div>
-
-<section id="about" class="mb-5">
-    <div id="img">
-        <img src="{% static 'blog/images/graduation-cap-icon-education-symbol-and-sign-illustration-free-vector.jpg'  %}" alt="">
-    </div>
-    <div id="text">
-        <h3 class="mt-5 mb-4">
-            {% trans "About Us" %}
-        </h3>
-        <p class="mb-5">
-            {% trans "Teaching God’s Word Around the World by Teaching the English Language World English Institute has one mission with one purpose." %}
-            <br>
-            <br>
-            {% trans "WEI works to lead as many people as possible from every nation under heaven to Christ by using God’s Word as the text to teach English grammar." %}
-            <br>
-            <br>
-{% trans "The English language is universal.  Billions want to learn it.  WEI teaches English free of charge in order to help them communicate effectively and read the Bible in English, many for the first time." %}
-            <br>
-        <a href="#" id="more-info">
-            {% trans "more info..." %}
         </a>
+
     </div>
-</section>
+
+    <section id="about" class="mb-5">
+        <div id="img">
+            <img src="{% static 'blog/images/graduation-cap-icon-education-symbol-and-sign-illustration-free-vector.jpg'  %}" alt="">
+        </div>
+        <div id="text">
+            <h3 class="mt-5 mb-4">
+                {% trans "About Us" %}
+            </h3>
+            <p class="mb-5">
+                {% trans "Teaching God’s Word Around the World by Teaching the English Language World English Institute has one mission with one purpose." %}
+                <br>
+                <br>
+                {% trans "WEI works to lead as many people as possible from every nation under heaven to Christ by using God’s Word as the text to teach English grammar." %}
+                <br>
+                <br>
+                {% trans "The English language is universal.  Billions want to learn it.  WEI teaches English free of charge in order to help them communicate effectively and read the Bible in English, many for the first time." %}
+                <br>
+                <a href="#" id="more-info">
+                    {% trans "more info..." %}
+                </a>
+        </div>
+    </section>
 
     <hr>
 
-<div id="news">
-
-<div class="card bg-light mb-3" style="max-width: 18rem;">
-  <div class="card-header">{% trans "Header" %}</div>
-  <div class="card-body">
-    <h5 class="card-title">{% trans "Light card title" %}</h5>
-      <img src="{% static 'blog/images/graduation-cap-icon-education-symbol-and-sign-illustration-free-vector.jpg' %}" alt="" class="card-img">
-    <p class="card-text">{% trans "Some quick example text to build on the card title and make up the bulk of the card's content." %}</p>
-    <p class="card-text">{% trans "then quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>" %}
-        <div class="card-footer">
-             <a href="" class="card-link">{% trans "more info" %}</a>
-        </div>
-</div>
-
-<div class="card bg-light mb-3" style="max-width: 18rem;">
-  <div class="card-header">{% trans "Header" %}</div>
-  <div class="card-body">
-    <h5 class="card-title">{% trans "Light card title" %}</h5>
-    <p class="card-text">{% trans "Some quick example text to build on the card title and make up the bulk of the card's content." %}c</p>
-    <p class="card-text">{% trans "then quick example text to build on the card title and make up the bulk of the card's content." %}</p>
-  </div>
-        <div class="card-footer">
-             <a href="" class="card-link">c</a>
-        </div>
-</div>
-
-<div class="card bg-light mb-3" style="max-width: 18rem;">
-  <div class="card-header">{% trans "Header" %}</div>
-  <div class="card-body">
-    <h5 class="card-title">{% trans "Light card title" %}</h5>
-    <p class="card-text">{% trans "Some quick example text to build on the card title and make up the bulk of the card's content." %}c</p>
-    <p class="card-text">{% trans "then quick example text to build on the card title and make up the bulk of the card's content." %}</p>
-  </div>
-        <div class="card-footer">
-             <a href="" class="card-link">{% trans "more info" %}</a>
-        </div>
-</div>
-
-<div class="card bg-light mb-3" style="max-width: 18rem;">
-  <div class="card-header">{% trans "Header" %}</div>
-  <div class="card-body">
-    <h5 class="card-title">{% trans "Light card title" %}</h5>
-    <p class="card-text">{% trans "Some quick example text to build on the card title and make up the bulk of the card's content." %}c</p>
-    <p class="card-text">{% trans "then quick example text to build on the card title and make up the bulk of the card's content." %}</p>
-  </div>
-        <div class="card-footer">
-             <a href="" class="card-link">{% trans "more info" %}</a>
-        </div>
-</div>
-
-<div class="card bg-light mb-3" style="max-width: 18rem;">
-  <div class="card-header">{% trans "Header" %}</div>
-  <div class="card-body">
-    <h5 class="card-title">{% trans "Light card title" %}</h5>
-    <p class="card-text">{% trans "Some quick example text to build on the card title and make up the bulk of the card's content." %}c</p>
-    <p class="card-text">{% trans "then quick example text to build on the card title and make up the bulk of the card's content." %}</p>
-  </div>
-        <div class="card-footer">
-             <a href="" class="card-link">{% trans "more info" %}</a>
-        </div>
-</div>
-
-<div class="card bg-light mb-3" style="max-width: 18rem;">
-  <div class="card-header">{% trans "Header" %}</div>
-  <div class="card-body">
-    <h5 class="card-title">{% trans "Light card title" %}</h5>
-    <p class="card-text">{% trans "Some quick example text to build on the card title and make up the bulk of the card's content." %}c</p>
-    <p class="card-text">{% trans "then quick example text to build on the card title and make up the bulk of the card's content." %}</p>
-  </div>
-        <div class="card-footer">
-             <a href="" class="card-link">{% trans "more info" %}</a>
-        </div>
-</div>
-
-<div class="card bg-light mb-3" style="max-width: 18rem;">
-  <div class="card-header">{% trans "Header" %}</div>
-  <div class="card-body">
-    <h5 class="card-title">{% trans "Light card title" %}</h5>
-    <p class="card-text">{% trans "Some quick example text to build on the card title and make up the bulk of the card's content." %}c</p>
-    <p class="card-text">{% trans "then quick example text to build on the card title and make up the bulk of the card's content." %}</p>
-  </div>
-        <div class="card-footer">
-             <a href="" class="card-link">{% trans "more info" %}</a>
-        </div>
-</div>
-
-<div class="card bg-light mb-3" style="max-width: 18rem;">
-  <div class="card-header">{% trans "Header" %}</div>
-  <div class="card-body">
-    <h5 class="card-title">{% trans "Light card title" %}</h5>
-    <p class="card-text">{% trans "Some quick example text to build on the card title and make up the bulk of the card's content." %}c</p>
-    <p class="card-text">{% trans "then quick example text to build on the card title and make up the bulk of the card's content." %}</p>
-  </div>
-        <div class="card-footer">
-             <a href="" class="card-link">{% trans "more info" %}</a>
-        </div>
-</div>
+    <div id="news">
 
 
+        {% if admin_posts %}
+                {% for post in admin_posts %}
 
-</div>
+            <div class="card bg-light mb-3" style="width: 50%;">
+                <div class="card-header"> {{ post.header }}</div>
+            <div class="card-body">
+                <h5 class="card-title">{% trans "Light card title" %}</h5>
+                <div class="image-wrapper">
+                    <img src="{{ post.image.url }}" alt="" class="card-img">
+                </div>
+                <div id="output-{{ forloop.counter }}" data-post-text="{{ post.text|escapejs }}" class="mt-2"></div>
+
+            </div>
+                            <div class="card-footer p-3">
+                    <a href="" class="card-link">{% trans "more info" %}</a>
+                </div>
+
+            </div>
+                    {% endfor %}
+
+        {% endif %}
+
+    </div>
 
 
-
-<button class="btn btn-outline-danger" id="myBtn" title="Go to top">{% trans "Top" %}</button>
+    <button class="btn btn-outline-danger" id="myBtn" title="Go to top">{% trans "Top" %}</button>
 
 
 
@@ -233,15 +156,40 @@
     <script src="../../static/blog/js/jquery.sticky.js"></script>
     <script src="../../static/blog/js/main.js"></script>
 
+
+    <script>
+    function sanitizeHTML(str) {
+    var temp = document.createElement('div');
+    temp.textContent = str;
+    return temp.innerHTML;
+}
+
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('[id^="output-"]').forEach(outputDiv => {
+                let postText = outputDiv.getAttribute('data-post-text');
+                postText = JSON.parse(`"${postText}"`);
+                const paragraphs = postText.split('\n'); // Split by newlines
+                outputDiv.innerHTML = ''; // Clear previous content
+
+                paragraphs.forEach(paragraph => {
+                    if (paragraph.trim()) { // Ignore empty lines
+                        const p = document.createElement('p');
+                         p.innerHTML = sanitizeHTML(paragraph);
+                        outputDiv.appendChild(p);
+                    }
+                });
+            });
+        });
+    </script>
     <script>
         $(document).ready(function() {
             if ($(window).width() > 565) {
-                    $(window).scroll(function () {
-                        if ($(this).scrollTop() > 80) {
-                            $("#myBtn").fadeIn("fast");
-                        } else {
-                            $("#myBtn").fadeOut("slow");
-                        }
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 80) {
+                        $("#myBtn").fadeIn("fast");
+                    } else {
+                        $("#myBtn").fadeOut("slow");
+                    }
                 });
             }
 

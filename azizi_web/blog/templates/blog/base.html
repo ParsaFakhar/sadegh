@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <noscript>Dude, Turn Your JavaScript On, How Else I'm Supposed To Steal Your Data And Sell it To FBI!</noscript>
+    <noscript>Turn Your JavaScript On, How Else I'm Supposed To Steal Your Data And Sell it To FBI!</noscript>
     <link rel="stylesheet" href="{% static 'blog/css/mcleod-reset.css' %}">
     <link rel="stylesheet" href="{% static 'blog/css/main.css' %}">
 <!--    <link rel="stylesheet" href="{ static 'blog/css/bootstrap.min.css' %}">-->
@@ -23,7 +23,7 @@
     <title>Title</title>
 
 </head>
-<body>
+<body {% if LANGUAGE_CODE == 'fa' %} class="farsi" {% endif %}>
 
 <!-- .site-mobile-menu -->
 <div class="site-mobile-menu site-navbar-target">
@@ -184,7 +184,27 @@
 {% csrf_token %}
     <script type="text/javascript">
     $(document).ready(function() {
-        var csrftoken = $("[name=csrfmiddlewaretoken]").val();
+
+        function getCookie(name) {
+    let cookieValue = null;
+    if (document.cookie && document.cookie !== '') {
+        const cookies = document.cookie.split(';');
+        for (let i = 0; i < cookies.length; i++) {
+            const cookie = cookies[i].trim();
+            // Does this cookie string begin with the name we want?
+            if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                break;
+            }
+        }
+    }
+    return cookieValue;
+}
+
+
+        const csrftoken = getCookie('csrftoken');
+
+        {#var csrftoken = $("[name=csrfmiddlewaretoken]").val();#}
         function csrfSafeMethod(method) {
             // these HTTP methods do not require CSRF protection
             return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
@@ -209,10 +229,9 @@
             $.ajax({
                 method: "POST",
                 url: "{% url 'set_language' %}",
-                data: {'language': lang, 'next': '{{ request.path }}'},
+                data: {'language': lang, 'next': '{{ request.path|escapejs }}'},
             }).done(function(data, textStatus, jqXHR) {
-                {#alert("{{request.path}}".replace(/en-us|fa-ir/g,lang));#}
-                top.location.href="{{request.path}}".replace(/en|fa/g, lang);
+                top.location.href="{{ request.path|escapejs }}".replace(/en|fa/g, lang);
             });
         }
     });

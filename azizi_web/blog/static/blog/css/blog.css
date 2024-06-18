@@ -1,3 +1,29 @@
+@font-face {
+    font-family: 'IRANSansWeb';
+    src: url('../fonts/IRANSansWeb.ttf') format('ttf');
+}
+body.farsi {
+    font-family: 'IRANSansWeb', sans-serif;
+}
+body.farsi,
+body.farsi p,
+body.farsi div,
+body.farsi span,
+body.farsi h1,
+body.farsi h2,
+body.farsi h3,
+body.farsi h4,
+body.farsi h5,
+body.farsi h6,
+body.farsi a,
+body.farsi li,
+body.farsi ul,
+body.farsi ol,
+body.farsi table,
+body.farsi th,
+body.farsi td {
+    font-family: 'IRANSansWeb', sans-serif;
+}
 #img{
     width: 43%;
 }
@@ -17,9 +43,7 @@
     text-align: left;
     font-size: 2rem;
     color: #8d9199;
-
 }
-
 #about{
     display: flex;
     justify-content: space-around;
@@ -46,27 +70,46 @@ a#more-info{
 }
 .card-body{
     overflow: hidden;
-    height: 9rem;
+    /*height: 9rem;*/
 }
-.card-body::before{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 43%;
-    background: linear-gradient(transparent, #fff);
-}
+/*.card-body::before{*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*    height: 43%;*/
+/*    background: linear-gradient(transparent, #fff);*/
+/*}*/
 .card-footer{
     z-index: 1;
 }
 .card-img{
-    height: 5rem;
-    width: auto;
+    /*height: auto !important;*/
+        @media (max-width: 991.98px) {
+      .card-img {
+        /*width: auto;*/
+      } }
+        @media (max-width: 767.98px) {
+      .card-img {
+        /*width: inherit;*/
+      }
     float: left;
     margin: 0em 1em 1em 0em;
 }
 
+.image-wrapper{
+width: 50%}
+}
+@media (max-width: 991.98px) {
+      .image-wrapper {
+        width: 1%;
+      } }
+@media (max-width: 767.98px) {
+      .image-wrapper {
+        width: 100%;
+      }
+}
 
 
 
